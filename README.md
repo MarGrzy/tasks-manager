@@ -1,2 +1,2 @@
 # tasks-manager
-Application which allows logged users to manage tasks.
+Application which allows users to manage tasks.
