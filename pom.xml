@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pl.mg.tasks</groupId>
-    <artifactId>manager</artifactId>
+    <artifactId>tasks-manager</artifactId>
     <version>0.0.1</version>
-    <name>manager</name>
+    <name>tasks-manager</name>
     <description>Tasks manager for logged users</description>
 
     <properties>
