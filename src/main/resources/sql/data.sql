@@ -1,7 +1,7 @@
 INSERT INTO tasks (id, task_name, date) VALUES
-    (1, 'Shopping', '11.03.2020'),
-    (2, 'House chores', '08.03.2020'),
-    (3, 'Visit a doctor', '10.02.2020');
+    (1, 'Shopping', '2020-03-11'),
+    (2, 'House chores', '2020-03-08'),
+    (3, 'Visit a doctor', '2020-02-10');
 
 INSERT INTO elements (id, element_name, element_details, task) VALUES
     (1, 'Lidl', 'Carrot, Tomato, Pasta, Potato', 1),

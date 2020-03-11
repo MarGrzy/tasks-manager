@@ -7,6 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
+import pl.mg.tasks.manager.model.Elements;
 import pl.mg.tasks.manager.model.Task;
 import pl.mg.tasks.manager.model.Element;
 import pl.mg.tasks.manager.model.Tasks;
@@ -75,11 +76,6 @@ public class TaskController {
         return new ResponseEntity(HttpStatus.OK);
     }
 
-    @PutMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public ResponseEntity putTasks(@RequestBody Task tasks) {
-        return putTasks(tasks.getTasks());
-    }
-
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity putTask(@PathVariable("id") Integer id, @RequestBody Task task) {
         if (task.getId() == null || !task.getId().equals(id)) {
@@ -121,9 +117,9 @@ public class TaskController {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
 
-        List<Element> element = elementRepository.findByTask(task.get());
+        List<Element> elements = elementRepository.findByTask(task.get());
         if (accept.equals(MediaType.APPLICATION_JSON_VALUE)) {
-            return new ResponseEntity<>(new Element(element), HttpStatus.OK);
+            return new ResponseEntity<>(new Elements(elements), HttpStatus.OK);
         }
 
         return new ResponseEntity<>(HttpStatus.UNSUPPORTED_MEDIA_TYPE);
@@ -225,10 +221,5 @@ public class TaskController {
         elementRepository.saveAll(elements);
 
         return new ResponseEntity(HttpStatus.OK);
-    }
-
-    @PutMapping(value = "/{id}/elements", consumes = {MediaType.APPLICATION_JSON_VALUE})
-    public ResponseEntity putElements(@PathVariable("id") Integer id, @RequestBody Element elements) {
-        return putElements(id, elements.getElements());
     }
 }
