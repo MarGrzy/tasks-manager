@@ -129,14 +129,14 @@ public class TaskController {
         return new ResponseEntity<>(HttpStatus.UNSUPPORTED_MEDIA_TYPE);
     }
 
-    @GetMapping(value = "/{id}/elements/{wid}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Element> getElement(@PathVariable("id") Integer id, @PathVariable("wid") Integer wid) {
+    @GetMapping(value = "/{id}/elements/{eid}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Element> getElement(@PathVariable("id") Integer id, @PathVariable("eid") Integer eid) {
         Optional<Task> task = taskRepository.findById(id);
         if (task.isEmpty()) {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
 
-        Optional<Element> element = elementRepository.findByTaskAndId(task.get(), wid);
+        Optional<Element> element = elementRepository.findByTaskAndId(task.get(), eid);
         if (element.isEmpty()) {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
@@ -157,19 +157,19 @@ public class TaskController {
     }
 
 
-    @DeleteMapping(value = "/{id}/elements/{wid}")
-    public ResponseEntity deleteElement(@PathVariable("id") Integer id, @PathVariable("wid") Integer wid) {
+    @DeleteMapping(value = "/{id}/elements/{eid}")
+    public ResponseEntity deleteElement(@PathVariable("id") Integer id, @PathVariable("eid") Integer eid) {
         Optional<Task> task = taskRepository.findById(id);
         if (task.isEmpty()) {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
 
-        Optional<Element> element = elementRepository.findByTaskAndId(task.get(), wid);
+        Optional<Element> element = elementRepository.findByTaskAndId(task.get(), eid);
         if (element.isEmpty()) {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
 
-        elementRepository.deleteById(wid);
+        elementRepository.deleteById(eid);
 
         return new ResponseEntity<>(HttpStatus.OK);
 
@@ -190,9 +190,9 @@ public class TaskController {
         return new ResponseEntity(headers, HttpStatus.CREATED);
     }
 
-    @PutMapping(value = "/{id}/elements/{wid}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity putElement(@PathVariable("id") Integer id, @PathVariable("wid") Integer wid, @RequestBody Element element) {
-        if (element.getId() == null || !element.getId().equals(wid)) {
+    @PutMapping(value = "/{id}/elements/{eid}", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity putElement(@PathVariable("id") Integer id, @PathVariable("eid") Integer eid, @RequestBody Element element) {
+        if (element.getId() == null || !element.getId().equals(eid)) {
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
 
@@ -201,7 +201,7 @@ public class TaskController {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
 
-        Optional<Element> org = elementRepository.findByTaskAndId(task.get(), wid);
+        Optional<Element> org = elementRepository.findByTaskAndId(task.get(), eid);
         if (org.isEmpty()) {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
