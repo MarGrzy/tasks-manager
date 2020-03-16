@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.content {
+  background-color: antiquewhite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body{
+  padding: 30px;
+  margin: 0px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

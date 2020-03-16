@@ -1,0 +1,13 @@
+#mackbook {
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 8px;
+  border: 1px solid chocolate;
+  height: 300px;
+  width: auto;
+  float: right;
+}
+
+#story {
+  text-align: justify;
+}
