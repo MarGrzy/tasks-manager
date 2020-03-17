@@ -6,8 +6,56 @@
   height: 300px;
   width: auto;
   float: right;
+  margin-top: 55px;
 }
 
 #story {
   text-align: justify;
+}
+
+.brown {
+  color: sienna;
+}
+
+.darkBlue {
+  color: #086A87;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+.woodenBar {
+  background-image: url("../../assets/images/wooden_board.png");
+  background-size: 300px;
+  padding: 25px 85px 0px 85px;
+  width: min-content;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: moccasin;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: 'Erica One', cursive;
+  text-align: center;
+  font-size: xx-large;
+}
+
+#list {
+  display: flex;
+  padding-top: 20px;
+
+}
+
+ol {
+  display: grid;
+  grid-gap: 5px;
+  margin-left: 150px;
+  font-size: x-large;
+}
+
+a {
+  text-decoration: none;
+  color: #61380B;
 }

@@ -1,0 +1,43 @@
+#loggedOut {
+  display: flex;
+  position: absolute;
+  bottom: 672px;
+  right: 257px;
+  color: moccasin;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: FreeSans;
+  font-size: larger;
+}
+
+.stoneBar {
+  background-image: url("../../assets/images/stone.jpg");
+  background-size: 80px;
+  border-radius: 5px;
+  border: 1px solid moccasin;
+  padding: 1px;
+}
+
+#logged {
+  display: flex;
+  position: absolute;
+  bottom: 655px;
+  right: 260px;
+  color: #b2805b;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: FreeSans;
+}
+
+h3 {
+  font-style: italic;
+  color: moccasin;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: FreeSans;
+}
+
+button {
+  margin: auto;
+}
+
+
+
+

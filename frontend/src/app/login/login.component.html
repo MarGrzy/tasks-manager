@@ -1,0 +1,19 @@
+<div>
+<div *ngIf="!logged">
+  <form id="loggedOut">
+    <div class="stoneBar">
+      <label for="login">Login</label>
+    </div>
+    <input name="login" [(ngModel)]="login" id="login" required="true"/>
+    <div class="stoneBar">
+      <label for="password">Password</label>
+    </div>
+    <input name="password" [(ngModel)]="password" id="password" type="password" required="true"/>
+    <button (click)="onLogin()">Log In</button>
+  </form>
+</div>
+<div *ngIf="logged" id="logged">
+  <h3>Welcome: &nbsp;{{ username }} &nbsp;</h3>
+  <button (click)="onLogOut()">Log Out</button>
+</div>
+</div>

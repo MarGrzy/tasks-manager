@@ -7,11 +7,15 @@ import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 import { MainSiteComponent } from './main-site/main-site.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import {LoginComponent} from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainSiteComponent
+    MainSiteComponent,
+    NavigationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
