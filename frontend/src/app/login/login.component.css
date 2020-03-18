@@ -1,43 +1,63 @@
 #loggedOut {
-  display: flex;
-  position: absolute;
-  bottom: 672px;
-  right: 257px;
-  color: moccasin;
+  display: grid;
+  grid-template-columns: 120px 250px;
+  grid-gap: 10px;
+  color: antiquewhite;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-family: FreeSans;
-  font-size: larger;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Erica One', cursive;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .stoneBar {
   background-image: url("../../assets/images/stone.jpg");
-  background-size: 80px;
+  background-size: 50px;
   border-radius: 5px;
   border: 1px solid moccasin;
   padding: 1px;
 }
 
 #logged {
-  display: flex;
-  position: absolute;
-  bottom: 655px;
-  right: 260px;
+  display: grid;
+  position: relative;
   color: #b2805b;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-family: FreeSans;
+  font-family: 'Erica One', cursive;
 }
 
 h3 {
   font-style: italic;
   color: moccasin;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-family: FreeSans;
+  font-family: 'Erica One', cursive;
 }
 
 button {
   margin: auto;
 }
 
+#dialog {
+  padding: 20px 20px 20px 0;
+  float: right;
+  background-image: url("../../assets/images/texture.jpg");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid moccasin;
+  color: moccasin;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: FreeSans, cursive;
+  margin: 80px 30px auto;
+}
+
+#dialogContent {
+  width: 360px;
+  margin: auto;
+}
 
 
 

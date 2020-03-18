@@ -1,5 +1,6 @@
 <div>
-<div *ngIf="!logged">
+<div *ngIf="!logged" id="dialog">
+  <div id="dialogContent">
   <form id="loggedOut">
     <div class="stoneBar">
       <label for="login">Login</label>
@@ -11,6 +12,7 @@
     <input name="password" [(ngModel)]="password" id="password" type="password" required="true"/>
     <button (click)="onLogin()">Log In</button>
   </form>
+</div>
 </div>
 <div *ngIf="logged" id="logged">
   <h3>Welcome: &nbsp;{{ username }} &nbsp;</h3>

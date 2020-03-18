@@ -1,16 +1,35 @@
 #mackbook {
-  margin-right: 50px;
-  margin-left: 50px;
   border-radius: 8px;
   border: 1px solid chocolate;
-  height: 300px;
-  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
   float: right;
   margin-top: 55px;
+  max-height: 300px;
+  max-width: 450px;
+  overflow: hidden;
+}
+
+#mac-image {
+  float: right;
+  margin-left: 50px;
+  max-width: 45%;
+  min-width: 200px;
 }
 
 #story {
   text-align: justify;
+  margin: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: block;
+  min-width: 60vw;
+}
+
+#text {
+  overflow: hidden;
+  min-width: 40%;
 }
 
 .brown {
@@ -29,7 +48,7 @@ h2 {
 .woodenBar {
   background-image: url("../../assets/images/wooden_board.png");
   background-size: 300px;
-  padding: 25px 85px 0px 85px;
+  padding: 25px 85px 0 85px;
   width: min-content;
   background-repeat: no-repeat;
 }
