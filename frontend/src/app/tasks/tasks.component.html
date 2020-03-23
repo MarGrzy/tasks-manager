@@ -1,0 +1,23 @@
+<div class="inside_content">
+  <table>
+    <caption>TASKS LIST:</caption>
+    <thead>
+    <tr>
+      <th>title</th>
+      <th>date</th>
+      <th>edit</th>
+      <th>delete</th>
+    </tr>
+    </thead>
+    <tbody id="tasksBody">
+    <ng-container *ngFor="let task of tasks | values">
+      <tr>
+        <td> {{task.name}} </td>
+        <td> {{task.date}} </td>
+        <td> <button class="btn" (click)="toTaskEditor(task.id)">Edit</button></td>
+        <td> <button class="btn" (click)="deleteOneTask(task.id)">Delete</button></td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+</div>

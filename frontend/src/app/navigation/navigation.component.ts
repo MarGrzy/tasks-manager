@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationComponent implements OnInit {
 
   public main = '&#9749; Main';
-  private tasksList = '&#128220; Tasks';
+  public tasksList = '&#128220; Tasks';
   private taskAddition = '&#10133; Addition';
 
   constructor() { }

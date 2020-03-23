@@ -9,13 +9,17 @@ import {AppRoutingModule} from './app-routing.module';
 import { MainSiteComponent } from './main-site/main-site.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import {LoginComponent} from './login/login.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { TasksPipe } from './tasks/tasks-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainSiteComponent,
     NavigationComponent,
-    LoginComponent
+    LoginComponent,
+    TasksComponent,
+    TasksPipe
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,7 @@ import {LoginComponent} from './login/login.component';
     RouterModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [TasksPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

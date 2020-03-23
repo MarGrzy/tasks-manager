@@ -25,6 +25,7 @@
   padding-left: 10px;
   display: block;
   min-width: 60vw;
+  grid-row: 2 / 2;
 }
 
 #text {
@@ -51,6 +52,7 @@ h2 {
   padding: 25px 85px 0 85px;
   width: min-content;
   background-repeat: no-repeat;
+  min-height: 200px;
 }
 
 h1 {
@@ -62,19 +64,21 @@ h1 {
 }
 
 #list {
-  display: flex;
+  position: relative;
+  display: grid;
+  grid-template-columns: 300px 300px;
   padding-top: 20px;
-
+  width: 40vw;
+  grid-row: 1 / 2;
 }
 
 ol {
-  display: grid;
-  grid-gap: 5px;
-  margin-left: 150px;
-  font-size: x-large;
+  margin-left: 70px;
+  font-size:calc(12px + 0.7vw);
 }
 
 a {
   text-decoration: none;
   color: #61380B;
 }
+

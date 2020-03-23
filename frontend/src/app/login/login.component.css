@@ -40,7 +40,7 @@ button {
 
 #dialog {
   padding: 20px 20px 20px 0;
-  float: right;
+  /*float: right;*/
   background-image: url("../../assets/images/texture.jpg");
   background-size: 500px;
   background-repeat: no-repeat;
@@ -52,6 +52,7 @@ button {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-family: FreeSans, cursive;
   margin: 80px 30px auto;
+  display: grid;
 }
 
 #dialogContent {

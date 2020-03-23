@@ -13,3 +13,7 @@ footer {
 section {
   margin-left: 15px;
 }
+
+app-login {
+  float: right;
+}

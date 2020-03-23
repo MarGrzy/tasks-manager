@@ -1,0 +1,73 @@
+thead {
+  background-image: url("../../assets/images/stone.jpg");
+  background-size: 80px;
+  color: moccasin;
+  font-size: medium;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: FreeSans, cursive;
+}
+
+tbody {
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #086A87;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #6ebdbf;
+}
+
+td:hover {
+  background-color: sandybrown;
+}
+
+table {
+  border-style: solid;
+  border-collapse: collapse;
+  border-color: #4b2510;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 800px;
+  padding: 15px;
+}
+
+table th {
+  width: 200px;
+}
+
+th {
+  border-style: solid;
+  border-collapse: collapse;
+  border-color: #61380B;
+  text-transform: uppercase;
+}
+
+tr {
+  border-style: solid;
+  border-collapse: collapse;
+  border-color: #61380B;
+}
+
+td {
+  border-style: solid;
+  border-collapse: collapse;
+  border-color: #61380B;
+}
+
+#goblinsBody .btn {
+  cursor: pointer;
+  width: 100%;
+}
+
+caption {
+  color: #6ebdbf;
+  text-shadow: -2px 0 #4b2510, 0 1px #4b2510, 1px 0 #4b2510, 0 -1px #4b2510;
+  font-size: large;
+  font-family: FreeSans, cursive;
+  letter-spacing: 3px;
+}
