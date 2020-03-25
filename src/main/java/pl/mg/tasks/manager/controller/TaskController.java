@@ -119,7 +119,7 @@ public class TaskController {
 
         List<Element> elements = elementRepository.findByTask(task.get());
         if (accept.equals(MediaType.APPLICATION_JSON_VALUE)) {
-            return new ResponseEntity<>(new Elements(elements), HttpStatus.OK);
+            return new ResponseEntity<>(elements, HttpStatus.OK);
         }
 
         return new ResponseEntity<>(HttpStatus.UNSUPPORTED_MEDIA_TYPE);
