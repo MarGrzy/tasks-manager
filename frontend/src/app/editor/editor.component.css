@@ -1,0 +1,154 @@
+thead {
+  background-image: url("../../assets/images/stone.jpg");
+  background-size: 80px;
+  color: moccasin;
+  font-size: medium;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: FreeSans, cursive;
+}
+
+tbody {
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: chocolate;
+}
+
+tbody tr:nth-child(even) {
+  background-color: gold;
+}
+
+td:hover {
+  background-color: sandybrown;
+}
+
+table {
+  border-style: solid;
+  border-collapse: collapse;
+  border-color: darkred;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 800px;
+  padding: 15px;
+}
+
+table th {
+  width: 200px;
+}
+
+th {
+  border-style: solid;
+  border-collapse: collapse;
+  border-color: darkred;
+  text-transform: uppercase;
+}
+
+tr {
+  border-style: solid;
+  border-collapse: collapse;
+  border-color: darkred;
+}
+
+td {
+  border-style: solid;
+  border-collapse: collapse;
+  border-color: darkred;
+}
+
+#elements {
+  padding-top: 50px;
+}
+
+.todo {
+  height: 120px;
+  width: auto;
+  float: left;
+}
+
+#space {
+  padding: 15px;
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-gap: 10px;
+}
+
+.dialog {
+  padding: 20px;
+  position: absolute;
+  display: block;
+  top: 450px;
+  left: 400px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: darkolivegreen;
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid moccasin;
+  color: moccasin;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: FreeSans, cursive;
+}
+
+.dialogContent {
+  width: 220px;
+  margin: auto;
+}
+
+#center {
+  margin: 0 auto;
+  display: block;
+}
+
+#elementsBody .btn {
+  cursor: pointer;
+  width: 100%;
+}
+
+.checklist {
+  height: 150px;
+  width: auto;
+  float: right;
+  margin-right: 400px;
+}
+
+
+#saveForm {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 100px 100px 100px;
+}
+
+#saveForm input {
+  grid-column: 2/4;
+}
+
+#saveForm input[type=submit] {
+  grid-column: 1;
+}
+
+#saveForm input[type=reset] {
+  grid-column: 3;
+}
+
+caption {
+  color: #6ebdbf;
+  text-shadow: -2px 0 #4b2510, 0 1px #4b2510, 1px 0 #4b2510, 0 -1px #4b2510;
+  font-size: large;
+  font-family: FreeSans, cursive;
+  letter-spacing: 3px;
+}
+
+#cancelDialog {
+  width: 100px;
+  margin: 7px auto;
+  display: block;
+}

@@ -9,7 +9,7 @@ export class NavigationComponent implements OnInit {
 
   public main = '&#9749; Main';
   public tasksList = '&#128220; Tasks';
-  private taskAddition = '&#10133; Addition';
+  public taskAddition = '&#10133; Addition';
 
   constructor() { }
 

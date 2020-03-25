@@ -19,7 +19,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/tasks")
-@CrossOrigin
+@CrossOrigin("*")
 public class TaskController {
 
     @Autowired
@@ -43,7 +43,7 @@ public class TaskController {
         }
 
         if (accept.equals(MediaType.APPLICATION_JSON_VALUE)) {
-            return new ResponseEntity<>(new Tasks(tasks), HttpStatus.OK);
+            return new ResponseEntity<>(tasks, HttpStatus.OK);
         }
 
         return new ResponseEntity<>(HttpStatus.UNSUPPORTED_MEDIA_TYPE);

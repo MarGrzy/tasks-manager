@@ -1,0 +1,16 @@
+<div class="inside_content">
+  <section>
+    <img class="coffee" src="../../assets/images/home-office2.jpg" alt="coffee"/>
+    <header><h2>Task:</h2></header>
+    <form id="addForm" (ngSubmit)="addOneTask()">
+      <label for="name">Name:</label>
+      <input name="name" [(ngModel)]="_name" id="name" type="text" required="true"/>
+
+      <label for="date">Date:</label>
+      <input name="date" [(ngModel)]="_date" id="date" type="text" required="true"/>
+
+      <input type="submit" value="Add"/>
+      <input type="reset" value="Reset"/>
+    </form>
+  </section>
+</div>

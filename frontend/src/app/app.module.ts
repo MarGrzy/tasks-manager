@@ -10,7 +10,8 @@ import { MainSiteComponent } from './main-site/main-site.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import {LoginComponent} from './login/login.component';
 import { TasksComponent } from './tasks/tasks.component';
-import { TasksPipe } from './tasks/tasks-pipe.pipe';
+import { EditorComponent } from './editor/editor.component';
+import { AdditionComponent } from './addition/addition.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TasksPipe } from './tasks/tasks-pipe.pipe';
     NavigationComponent,
     LoginComponent,
     TasksComponent,
-    TasksPipe
+    EditorComponent,
+    AdditionComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ import { TasksPipe } from './tasks/tasks-pipe.pipe';
     RouterModule,
     HttpClientModule
   ],
-  providers: [TasksPipe],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

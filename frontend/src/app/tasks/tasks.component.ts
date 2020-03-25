@@ -24,7 +24,6 @@ export class TasksComponent implements OnInit {
   ngOnInit() {
     this.service.fetchTasks().subscribe(tasks => this.tasks = tasks);
     console.log(this.tasks);
-    console.log(Task);
   }
 
   deleteOneTask(id: number): void {

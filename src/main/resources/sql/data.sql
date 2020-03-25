@@ -1,4 +1,4 @@
-INSERT INTO public.tasks (id, task_name, date) VALUES
+INSERT INTO public.tasks (id, task_name, task_date) VALUES
     (1, 'Shopping', '2020-03-11'),
     (2, 'House chores', '2020-03-08'),
     (3, 'Visit a doctor', '2020-02-10');

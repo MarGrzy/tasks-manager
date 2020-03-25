@@ -1,0 +1,30 @@
+#addForm {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 100px 100px 100px;
+}
+
+#addForm input {
+  grid-column: 2/4;
+}
+
+#addForm input[type=submit] {
+  grid-column: 1;
+}
+
+#addForm input[type=reset] {
+  grid-column: 3;
+}
+
+.coffee {
+  height: 150px;
+  width: auto;
+  float: right;
+  margin-right: 300px;
+}
+
+#saveForm {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 100px 100px 100px;
+}

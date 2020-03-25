@@ -25,6 +25,7 @@ public class Task {
     @Column(name = "task_name")
     private String name;
 
+    @Column(name = "task_date")
     private Date date;
 
     @OneToMany(mappedBy = "task", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)

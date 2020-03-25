@@ -1,0 +1,60 @@
+<div class="inside_content">
+  <div>
+    <section>
+      <img class="checklist" src="../../assets/images/checklist2.png" alt="checklist2"/>
+      <header><h2>Edit task:</h2></header>
+      <form id="saveForm" (ngSubmit)="updateTask(task.id)">
+
+        <label for="name">Name:</label>
+        <input name="name" [(ngModel)]="editedName" id="name" type="text"/>
+
+        <label for="date">Date:</label>
+        <input name="date" [(ngModel)]="editedDate" id="date" type="text"/>
+
+        <input type="submit" value="Save"/>
+        <input type="reset" value="Reset"/>
+      </form>
+    </section>
+  </div>
+
+  <div id="elements">
+    <img class="todo" src="../../assets/images/tasks.jpg" alt="tasks"/>
+    <table>
+      <caption>TASKS DETAILS:</caption>
+      <thead>
+      <tr>
+        <th>name</th>
+        <th>details</th>
+        <th>delete</th>
+      </tr>
+      </thead>
+      <tbody id="elementsBody">
+      <ng-container *ngFor="let element of task.elements">
+        <tr>
+          <td> {{element.name}} </td>
+          <td> {{element.details}} </td>
+          <td> <button class="btn" (click)="deleteOneElement(task.id, element.id)">Delete</button></td>
+        </tr>
+      </ng-container>
+      </tbody>
+    </table>
+    <div id="space">
+      <button id="center" (click)="showElementDialog()">Add</button>
+    </div>
+    <div *ngIf="showElementEditorDialog" class="dialog">
+      <div class=" dialogContent">
+        <form class="twoColumns" (ngSubmit)="addOneElement(task.id)">
+
+          <label for="elementName">Name</label>
+          <input name="elementName" [(ngModel)]="elementName" id="elementName" type="text"/>
+          <label for="details">Details</label>
+          <input name="elementDetails" [(ngModel)]="elementDetails" id="details" type="text"/>
+
+          <input type="submit" value="Save"/>
+          <input type="reset" value="Reset"/>
+        </form>
+        <button id="cancelDialog" (click)="cancelAddingElement()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
