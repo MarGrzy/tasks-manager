@@ -12,11 +12,11 @@ tbody {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: chocolate;
+  background-color: #086A87;
 }
 
 tbody tr:nth-child(even) {
-  background-color: gold;
+  background-color: #6ebdbf;
 }
 
 td:hover {
@@ -26,7 +26,7 @@ td:hover {
 table {
   border-style: solid;
   border-collapse: collapse;
-  border-color: darkred;
+  border-color: #4b2510;
   top: 0;
   left: 0;
   right: 0;
@@ -43,20 +43,20 @@ table th {
 th {
   border-style: solid;
   border-collapse: collapse;
-  border-color: darkred;
+  border-color: #61380B;
   text-transform: uppercase;
 }
 
 tr {
   border-style: solid;
   border-collapse: collapse;
-  border-color: darkred;
+  border-color: #61380B;
 }
 
 td {
   border-style: solid;
   border-collapse: collapse;
-  border-color: darkred;
+  border-color: #61380B;
 }
 
 #elements {

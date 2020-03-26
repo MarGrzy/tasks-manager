@@ -7,10 +7,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
-import pl.mg.tasks.manager.model.Elements;
 import pl.mg.tasks.manager.model.Task;
 import pl.mg.tasks.manager.model.Element;
-import pl.mg.tasks.manager.model.Tasks;
 import pl.mg.tasks.manager.repository.ElementRepository;
 import pl.mg.tasks.manager.repository.TaskRepository;
 
@@ -19,7 +17,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/tasks")
-@CrossOrigin("*")
+@CrossOrigin
 public class TaskController {
 
     @Autowired
