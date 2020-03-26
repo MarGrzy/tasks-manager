@@ -11,14 +11,16 @@ const routes: Routes = [
   {path: 'addition', component: AdditionComponent},
   {path: 'editor/:id', component: EditorComponent},
   {path: 'tasks',
-  redirectTo: '/main',
+  redirectTo: '/list',
   pathMatch: 'full'
   },
+  {path: '',
+  redirectTo: '/main',
+  pathMatch: 'full'}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule],
-  providers: []
 })
 export class AppRoutingModule { }

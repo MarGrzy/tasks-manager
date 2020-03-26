@@ -41,7 +41,7 @@ export class RestService {
 
   deleteTask(id: number): Observable<any> {
     let headers = new HttpHeaders();
-    headers = headers.set('Authorization', 'Basic' + localStorage.getItem('auth'));
+    headers = headers.set('Authorization', 'Basic ' + localStorage.getItem('auth'));
 
     return this.http.delete(this.tasksURL+id,{headers})
       .pipe(
