@@ -12,8 +12,7 @@ const routes: Routes = [
   {path: 'editor/:id', component: EditorComponent},
   {path: 'tasks',
   redirectTo: '/list',
-  pathMatch: 'full'
-  },
+  pathMatch: 'full'},
   {path: '',
   redirectTo: '/main',
   pathMatch: 'full'}
@@ -24,3 +23,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule { }
+
