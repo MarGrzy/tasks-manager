@@ -1,5 +1,4 @@
 nav {
-  margin-top: -4px;
   height: 30px;
   background: url("../../assets/images/texture.jpg") no-repeat;
   background-size: cover;
@@ -10,20 +9,25 @@ nav {
 
 nav ul {
   padding: 0 0 0 50px;
-  margin-top: 0;
+  margin: 0;
   transform: scaleX(-1);
+  height: 100%;
+  display: flex;
 }
 
 nav li {
-  display:inline-block;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  list-style: none;
+  height: 100%;
+  align-items: center;
 }
 
 nav a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
-  padding: 5px 50px 5px 5px;
+  padding: 0 50px 0 5px;
+  height: 100%;
 }
 
 nav a:hover {
