@@ -81,16 +81,15 @@ td {
 
 .dialog {
   padding: 20px;
-  position: absolute;
   display: block;
-  top: 450px;
-  left: 400px;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  position: absolute;
+  margin-left: -250px;
+  margin-top: -50px;
   background-color: darkolivegreen;
   width: 300px;
   height: 100px;
+  top: 42%;
+  left: 62%;
   border-radius: 5px;
   border: 1px solid moccasin;
   color: moccasin;
@@ -117,7 +116,8 @@ td {
   height: 150px;
   width: auto;
   float: right;
-  margin-right: 400px;
+  margin-right: 600px;
+  -webkit-background-clip: text;
 }
 
 

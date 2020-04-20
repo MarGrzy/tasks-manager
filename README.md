@@ -1,6 +1,19 @@
 # tasks-manager
 Application which allows users to manage tasks.
 
+There are users with functionality:
+
+login: user1
+/ password: user1
+/ available: add new task
+
+login: user2
+/ password: user2
+/ available: add new task
+
+login: admin
+/ password: admin
+/ available: add new task; edit task; delete task
 
 How to start application:
 
